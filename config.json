@@ -1,0 +1,13 @@
+{
+ "events": [
+  {
+   "code": "EX5B99",
+   "label": "JKT48 Exclusive EX5B99"
+  }
+ ],
+ "ignore_members": [
+  "Desy Natalia"
+ ],
+ "fail_alert_after": 3,
+ "max_lines": 25
+}

@@ -1,0 +1,44 @@
+name: jkt48-quota-watch
+
+# Jalan di server GitHub, bukan di laptop.
+# tiap 5 menit GitHub panggil job ini; di dalamnya cek kuota ~1x per menit
+# selama ~4 menit, jadi cakupannya nyaris terus-menerus tanpa laptop nyala.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jkt48-quota-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cek kuota (4x, jeda 60 detik)
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          set -u
+          git config user.name  "jkt48-quota-watch"
+          git config user.email "jkt48-quota-watch@users.noreply.github.com"
+          for i in 1 2 3 4; do
+            echo "::group::cek ke-$i"
+            python3 watch.py || echo "watch.py error (diabaikan, loop lanjut)"
+            echo "::endgroup::"
+            if [ -n "$(git status --porcelain)" ]; then
+              git add -A
+              git commit -q -m "state: $(date -u +%Y-%m-%dT%H:%MZ)" || true
+              git pull -q --rebase --autostash origin main || true
+              git push -q || echo "push state gagal (diabaikan)"
+            fi
+            if [ "$i" -lt 4 ]; then sleep 60; fi
+          done

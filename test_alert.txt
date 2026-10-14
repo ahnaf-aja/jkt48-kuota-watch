@@ -1,0 +1,2 @@
+🧪 TEST dari cloud — watcher kuota JKT48 sekarang jalan di GitHub Actions (server GitHub),
+bukan lagi di laptop. Kalau lu baca ini di Discord, artinya laptop lu boleh mati dan notif tetap masuk.

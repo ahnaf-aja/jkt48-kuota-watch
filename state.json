@@ -1,0 +1,755 @@
+{
+ "updated_at": "2026-10-14T18:14:34",
+ "fail_streak": 0,
+ "fail_notified": false,
+ "events": {
+  "EX5B99": {
+   "sessions": {
+    "EX5B99-SNE4A7": {
+     "date": "2026-10-24",
+     "label": "Sesi 1",
+     "start": "10:00:00",
+     "end": "11:00:00",
+     "lanes": 12
+    },
+    "EX5B99-SN0624": {
+     "date": "2026-10-24",
+     "label": "Sesi 2",
+     "start": "11:00:00",
+     "end": "12:00:00",
+     "lanes": 12
+    },
+    "EX5B99-SNFF2D": {
+     "date": "2026-10-24",
+     "label": "Sesi 3",
+     "start": "12:00:00",
+     "end": "13:00:00",
+     "lanes": 12
+    },
+    "EX5B99-SN2B5E": {
+     "date": "2026-10-24",
+     "label": "Sesi 4",
+     "start": "14:00:00",
+     "end": "15:00:00",
+     "lanes": 12
+    },
+    "EX5B99-SNB5BE": {
+     "date": "2026-10-24",
+     "label": "Sesi 5",
+     "start": "15:00:00",
+     "end": "16:00:00",
+     "lanes": 12
+    },
+    "EX5B99-SN9E9E": {
+     "date": "2026-10-24",
+     "label": "Sesi 6",
+     "start": "16:00:00",
+     "end": "17:00:00",
+     "lanes": 12
+    },
+    "EX5B99-SN6A22": {
+     "date": "2026-10-24",
+     "label": "Sesi 7",
+     "start": "17:00:00",
+     "end": "18:00:00",
+     "lanes": 12
+    },
+    "EX5B99-SN91E1": {
+     "date": "2026-10-24",
+     "label": "Sesi 8",
+     "start": "18:00:00",
+     "end": "19:00:00",
+     "lanes": 14
+    }
+   },
+   "lanes": {
+    "EX5B99-SNE4A7-SDA818": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 1",
+     "m": "Marsha Lenathea",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SD5CF7": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 2",
+     "m": "Nina Tutachia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SDF117": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 3",
+     "m": "Oline Manuel",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SD1F30": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 4",
+     "m": "Freya Jayawardana",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SD1DF2": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 5",
+     "m": "Greesella Adhalia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SDB2D7": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 6",
+     "m": "Adeline Wijaya",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SD252A": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 7",
+     "m": "Gita Sekar Andarini",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SDBEDA": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 8",
+     "m": "Shabilqis Naila",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SDF48E": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 9",
+     "m": "Carissa Dini",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SD5DE9": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 10",
+     "m": "Ralyne Van Irwan",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SDF3AD": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 11",
+     "m": "Christabella Bonita",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNE4A7-SD3DB8": {
+     "s": "EX5B99-SNE4A7",
+     "j": "Jalur 12",
+     "m": "Sona Kalyana",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SD872A": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 1",
+     "m": "Marsha Lenathea",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SD9ED2": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 2",
+     "m": "Nina Tutachia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SDAA14": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 3",
+     "m": "Oline Manuel",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SDF6BE": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 4",
+     "m": "Freya Jayawardana",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SD3797": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 5",
+     "m": "Greesella Adhalia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SD65BE": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 6",
+     "m": "Adeline Wijaya",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SDF261": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 7",
+     "m": "Gita Sekar Andarini",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SD15BB": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 8",
+     "m": "Shabilqis Naila",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SD03EE": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 9",
+     "m": "Fatimah Azzahra",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SD0EF0": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 10",
+     "m": "Putry Jazyta",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SDF0EF": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 11",
+     "m": "Fahira Putri",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN0624-SD88DB": {
+     "s": "EX5B99-SN0624",
+     "j": "Jalur 12",
+     "m": "Maxine Faye",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SDEE71": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 1",
+     "m": "Febriola Sinambela",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SDD4D1": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 2",
+     "m": "Gabriela Abigail",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SDDAC5": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 3",
+     "m": "Jesslyn Elly",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SD8B6C": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 4",
+     "m": "Helisma Putri",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SD0DF8": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 5",
+     "m": "Kathrina Irene",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SD9D96": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 6",
+     "m": "Angelina Christy",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SD777D": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 7",
+     "m": "Michelle Levia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SD5FEE": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 8",
+     "m": "Abigail Rachel",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SD1384": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 9",
+     "m": "Lulu Salsabila",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SD72DA": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 10",
+     "m": "Dena Natalia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SDD84F": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 11",
+     "m": "Astrella Virgiananda",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNFF2D-SD6692": {
+     "s": "EX5B99-SNFF2D",
+     "j": "Jalur 12",
+     "m": "Hagia Sopia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SD3967": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 1",
+     "m": "Febriola Sinambela",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SD631C": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 2",
+     "m": "Gabriela Abigail",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SD0E72": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 3",
+     "m": "Jesslyn Elly",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SDE6F7": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 4",
+     "m": "Helisma Putri",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SD1989": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 5",
+     "m": "Kathrina Irene",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SDA3EE": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 6",
+     "m": "Angelina Christy",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SDA317": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 7",
+     "m": "Michelle Levia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SD81C6": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 8",
+     "m": "Abigail Rachel",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SD24EE": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 9",
+     "m": "Lulu Salsabila",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SD0D1F": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 10",
+     "m": "Dena Natalia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SDE981": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 11",
+     "m": "Afera Thalia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN2B5E-SD3484": {
+     "s": "EX5B99-SN2B5E",
+     "j": "Jalur 12",
+     "m": "Heidi Suyangga",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SD2B8F": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 1",
+     "m": "Michelle Alexandra",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SD0CE2": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 2",
+     "m": "Indah Cahya",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SD32AC": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 3",
+     "m": "Grace Octaviani",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SDCEF2": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 4",
+     "m": "Aurellia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SDE837": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 5",
+     "m": "Celline Thefani",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SD19AB": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 6",
+     "m": "Cornelia Vanisa",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SD1388": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 7",
+     "m": "Mutiara Azzahra",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SD84F1": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 8",
+     "m": "Victoria Kimberly",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SDEE9C": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 9",
+     "m": "Catherina Vallencia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SD0000": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 10",
+     "m": "Jessica Chandra",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SDBD79": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 11",
+     "m": "Ribka Budiman",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SNB5BE-SDDFEF": {
+     "s": "EX5B99-SNB5BE",
+     "j": "Jalur 12",
+     "m": "Jacqueline Immanuela",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SDECCD": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 1",
+     "m": "Michelle Alexandra",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SDF562": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 2",
+     "m": "Indah Cahya",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SDC58E": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 3",
+     "m": "Grace Octaviani",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SDBA86": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 4",
+     "m": "Aurellia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SDA74F": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 5",
+     "m": "Celline Thefani",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SD35FA": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 6",
+     "m": "Cornelia Vanisa",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SD1A06": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 7",
+     "m": "Mutiara Azzahra",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SD04E5": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 8",
+     "m": "Victoria Kimberly",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SD956E": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 9",
+     "m": "Catherina Vallencia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SDE860": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 10",
+     "m": "Jessica Chandra",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SD6439": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 11",
+     "m": "Ribka Budiman",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN9E9E-SDBC4F": {
+     "s": "EX5B99-SN9E9E",
+     "j": "Jalur 12",
+     "m": "Nur Intan",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SDB9D2": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 1",
+     "m": "Jazzlyn Trisha",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SD8983": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 2",
+     "m": "Aurhel Alana",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SD286E": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 3",
+     "m": "Fiony Alveria",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SD8A8A": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 4",
+     "m": "Hillary Abigail",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SDCAA2": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 5",
+     "m": "Fritzy Rosmerian",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SDCB59": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 6",
+     "m": "Nayla Suji",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SD8018": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 7",
+     "m": "Anindya Ramadhani",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SDE6A2": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 8",
+     "m": "Cynthia Yaputera",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SD670D": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 9",
+     "m": "Desy Natalia",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SD7D39": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 10",
+     "m": "Raisha Syifa",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SD4F8B": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 11",
+     "m": "Feni Fitriyanti",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN6A22-SD755D": {
+     "s": "EX5B99-SN6A22",
+     "j": "Jalur 12",
+     "m": "Humaira Ramadhani",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SD63C3": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 1",
+     "m": "Jazzlyn Trisha",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SDF201": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 2",
+     "m": "Aurhel Alana",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SDEC3B": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 3",
+     "m": "Fiony Alveria",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SDC52B": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 4",
+     "m": "Hillary Abigail",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SD3286": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 5",
+     "m": "Fritzy Rosmerian",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SD70B1": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 6",
+     "m": "Nayla Suji",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SDE459": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 7",
+     "m": "Anindya Ramadhani",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SDEE29": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 8",
+     "m": "Cynthia Yaputera",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SD4ADC": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 9",
+     "m": "Desy Natalia",
+     "q": 17,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SD462F": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 10",
+     "m": "Raisha Syifa",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SD81E8": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 11",
+     "m": "Feni Fitriyanti",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SD2B71": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 12",
+     "m": "Jemima Evodie",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SD429E": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 13",
+     "m": "Mikaela Kusjanto",
+     "q": 0,
+     "p": 200000
+    },
+    "EX5B99-SN91E1-SDDFCE": {
+     "s": "EX5B99-SN91E1",
+     "j": "Jalur 14",
+     "m": "Bong Aprilli",
+     "q": 0,
+     "p": 200000
+    }
+   }
+  }
+ }
+}
