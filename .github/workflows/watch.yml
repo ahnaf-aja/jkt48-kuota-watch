@@ -23,7 +23,7 @@ permissions:
   actions: write
 
 concurrency:
-  group: jkt48-quota-watch
+  group: jkt48-quota-watch-v2
   cancel-in-progress: false
 
 jobs:
