@@ -15,6 +15,7 @@ Selalu exit 0 supaya workflow tidak dianggap gagal (kecuali error tak terduga).
 
 from __future__ import annotations
 
+import concurrent.futures
 import json
 import os
 import subprocess
@@ -32,6 +33,8 @@ TEST_PATH = HOME / "test_alert.txt"
 
 API = "https://jkt48.com/api/v1/exclusives/{code}/bonus?lang=id"
 BASE = "https://jkt48.com"
+# proxy pembaca teks: dipakai kalau Cloudflare nolak IP runner langsung
+JINA = "https://r.jina.ai/"
 
 HEADERS = {
     "Accept": "application/json, text/plain, */*",
@@ -120,25 +123,59 @@ def _json_or_none(body: str):
 
 def _stealth_json(url: str):
     """Scrapling StealthyFetcher — browser beneran (Camoufox) buat nembus managed
-    challenge Cloudflare yang nolak client HTTP biasa dari IP datacenter."""
+    challenge Cloudflare yang nolak client HTTP biasa dari IP datacenter.
+    Dikasih batas waktu keras: di runner GitHub pernah ngunci >10 menit."""
     try:
         from scrapling.fetchers import StealthyFetcher
     except Exception as exc:  # noqa: BLE001
         return None, f"scrapling tidak tersedia ({type(exc).__name__})"
-    try:
-        page = StealthyFetcher.fetch(url, headless=True, network_idle=True)
+
+    def _ambil():
+        try:
+            page = StealthyFetcher.fetch(url, headless=True, solve_cloudflare=True,
+                                         timeout=45000, network_idle=False)
+        except TypeError:  # versi lama gak kenal sebagian kwarg
+            page = StealthyFetcher.fetch(url, headless=True, timeout=45000)
         raw = getattr(page, "body", None) or getattr(page, "text", "") or ""
         if isinstance(raw, bytes):
             raw = raw.decode("utf-8", "replace")
-        payload, err = _json_or_none(raw)
-        return (payload, "") if payload is not None else (None, err)
+        return raw
+
+    try:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+            raw = pool.submit(_ambil).result(timeout=90)
+    except concurrent.futures.TimeoutError:
+        return None, "stealth timeout >90s"
     except Exception as exc:  # noqa: BLE001
         return None, f"{type(exc).__name__}: {exc}"
+    payload, err = _json_or_none(raw)
+    return (payload, "") if payload is not None else (None, err)
+
+
+def _proxy_json(url: str):
+    """Lewat proxy pembaca teks (r.jina.ai) — dipakai kalau Cloudflare nolak IP
+    datacenter secara langsung. Balikannya JSON asli yang dibungkus teks, jadi
+    diambil dari '{' pertama sampai '}' terakhir."""
+    req = urllib.request.Request(JINA + url, headers={
+        "User-Agent": HEADERS["User-Agent"], "Accept": "text/plain, */*"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            body = resp.read().decode("utf-8", "replace")
+    except Exception as exc:  # noqa: BLE001
+        return None, f"proxy: {type(exc).__name__}: {exc}"
+    payload, err = _json_or_none(body)
+    if payload is None:
+        return None, f"proxy: {err}"
+    if not payload.get("status"):
+        return None, f"proxy: status={payload.get('status')!r}"
+    if not any(s.get("session_members") for s in payload.get("data") or []):
+        return None, "proxy: data sesi kosong"
+    return payload, ""
 
 
 def fetch(code: str) -> tuple[dict | None, str]:
-    """urllib dulu (cepat). Kalau Cloudflare nolak: mode USE_SCRAPLING=1 pakai browser
-    stealth, kalau tidak: retry bertingkat + warm-up, terakhir fallback curl."""
+    """Rantai: langsung -> proxy teks -> browser stealth (kalau USE_SCRAPLING=1).
+    Tanpa mode stealth, ditutup fallback retry + curl."""
     url = API.format(code=code)
     stealth = (os.environ.get("USE_SCRAPLING") or "").strip().lower() in {"1", "true", "yes"}
 
@@ -147,7 +184,13 @@ def fetch(code: str) -> tuple[dict | None, str]:
     if payload is not None:
         return payload, ""
     err = jerr or err
-    log(f"cara biasa gagal untuk {code} ({err})")
+    log(f"cara langsung gagal untuk {code} ({err})")
+
+    payload, perr = _proxy_json(url)
+    if payload is not None:
+        log("berhasil lewat proxy r.jina.ai")
+        return payload, ""
+    log(f"proxy gagal untuk {code} ({perr})")
 
     if stealth:
         payload, serr = _stealth_json(url)
@@ -155,7 +198,7 @@ def fetch(code: str) -> tuple[dict | None, str]:
             log("berhasil lewat StealthyFetcher (browser)")
             return payload, ""
         log(f"stealth gagal: {serr}")
-        return None, f"urllib: {err}; scrapling: {serr}"
+        return None, f"langsung: {err}; {perr}; scrapling: {serr}"
 
     for attempt, wait in enumerate((3, 6, 10), start=2):
         time.sleep(wait)
