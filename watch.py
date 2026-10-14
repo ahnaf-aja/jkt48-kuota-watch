@@ -19,6 +19,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -92,21 +93,41 @@ def ignored(member: str, ignore_list) -> bool:
     return any(name == str(i).strip().casefold() for i in ignore_list)
 
 
-def fetch(code: str) -> tuple[dict | None, str]:
-    url = API.format(code=code)
+def _get(url: str) -> tuple[str, str]:
+    """(body, error). Tanpa cookie jar — memang cuma butuh header browser."""
     req = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
-            body = resp.read().decode("utf-8", "replace")
-        if body.lstrip().startswith("{"):
-            return json.loads(body), ""
-        err = f"non-JSON response ({len(body)} bytes)"
+            return resp.read().decode("utf-8", "replace"), ""
     except urllib.error.HTTPError as exc:
-        err = f"HTTP {exc.code}"
+        return "", f"HTTP {exc.code}"
     except Exception as exc:  # noqa: BLE001
-        err = f"{type(exc).__name__}: {exc}"
+        return "", f"{type(exc).__name__}: {exc}"
 
-    log(f"urllib gagal untuk {code} ({err}); fallback ke curl")
+
+def fetch(code: str) -> tuple[dict | None, str]:
+    """Cloudflare di depan jkt48.com kadang balas 403 ke IP datacenter (runner GitHub)
+    di beberapa request pertama, lalu lolos. Jadi: retry bertingkat + warm-up halaman
+    utama, baru fallback ke curl."""
+    url = API.format(code=code)
+    err = ""
+    for attempt, wait in enumerate((0, 3, 6, 10), start=1):
+        if wait:
+            time.sleep(wait)
+        body, err = _get(url)
+        if body.lstrip().startswith("{"):
+            try:
+                return json.loads(body), ""
+            except ValueError:
+                err = f"JSON rusak ({len(body)} bytes)"
+        if body:
+            err = f"non-JSON response ({len(body)} bytes)"
+        log(f"percobaan {attempt} untuk {code} gagal ({err})")
+        if attempt == 1:
+            warm, _ = _get(BASE + "/")
+            log(f"warm-up halaman utama: {'ok' if warm else 'gagal'}")
+
+    log(f"urllib habis percobaan untuk {code} ({err}); fallback ke curl")
     argv = ["curl", "-sS", "--max-time", "30", "-w", "\n%{http_code}"]
     for key, value in HEADERS.items():
         argv += ["-H", f"{key}: {value}"]
@@ -239,6 +260,20 @@ def send_discord(text: str) -> bool:
     return False
 
 
+def save_state(prev: dict, events: dict, fail_streak: int, fail_notified: bool) -> bool:
+    """Tulis state.json HANYA kalau isi pentingnya berubah. Kalau tidak, workflow bakal
+    commit tiap menit cuma karena timestamp — repo jadi sampah 1.400 commit/hari."""
+    if all(prev.get(k) == v for k, v in (("events", events), ("fail_streak", fail_streak),
+                                        ("fail_notified", fail_notified))):
+        log("state tidak berubah — tidak ditulis ulang")
+        return False
+    save_json(STATE_PATH, {
+        "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "fail_streak": fail_streak, "fail_notified": fail_notified, "events": events})
+    log("state diperbarui")
+    return True
+
+
 def main() -> int:
     cfg = config()
     ignore_list = cfg.get("ignore_members") or []
@@ -291,9 +326,7 @@ def main() -> int:
         log(f"baseline pertama: total kuota {total} (tidak ada notifikasi)")
         if test_alert and send_discord(test_alert):
             TEST_PATH.unlink(missing_ok=True)
-        save_json(STATE_PATH, {"updated_at": now.isoformat(timespec="seconds"),
-                               "fail_streak": fail_streak, "fail_notified": False,
-                               "events": new_events})
+        save_state(prev, new_events, fail_streak, False)
         return 0
 
     messages: list[str] = []
@@ -324,10 +357,7 @@ def main() -> int:
     if delivered or not messages:
         if not errors and prev.get("fail_notified"):
             prev["fail_notified"] = False
-        save_json(STATE_PATH, {"updated_at": now.isoformat(timespec="seconds"),
-                               "fail_streak": fail_streak,
-                               "fail_notified": bool(prev.get("fail_notified")),
-                               "events": new_events})
+        save_state(prev, new_events, fail_streak, bool(prev.get("fail_notified")))
     else:
         log("state TIDAK dimajukan karena pengiriman gagal")
     return 0
