@@ -105,27 +105,68 @@ def _get(url: str) -> tuple[str, str]:
         return "", f"{type(exc).__name__}: {exc}"
 
 
+def _json_or_none(body: str):
+    """(payload, error). Browser kadang bungkus JSON jadi HTML — ambil dari '{' pertama."""
+    if not body:
+        return None, "body kosong"
+    start, end = body.find("{"), body.rfind("}")
+    if start < 0 or end <= start:
+        return None, f"bukan JSON ({len(body)} bytes)"
+    try:
+        return json.loads(body[start:end + 1]), ""
+    except ValueError as exc:
+        return None, f"JSON rusak: {exc}"
+
+
+def _stealth_json(url: str):
+    """Scrapling StealthyFetcher — browser beneran (Camoufox) buat nembus managed
+    challenge Cloudflare yang nolak client HTTP biasa dari IP datacenter."""
+    try:
+        from scrapling.fetchers import StealthyFetcher
+    except Exception as exc:  # noqa: BLE001
+        return None, f"scrapling tidak tersedia ({type(exc).__name__})"
+    try:
+        page = StealthyFetcher.fetch(url, headless=True, network_idle=True)
+        raw = getattr(page, "body", None) or getattr(page, "text", "") or ""
+        if isinstance(raw, bytes):
+            raw = raw.decode("utf-8", "replace")
+        payload, err = _json_or_none(raw)
+        return (payload, "") if payload is not None else (None, err)
+    except Exception as exc:  # noqa: BLE001
+        return None, f"{type(exc).__name__}: {exc}"
+
+
 def fetch(code: str) -> tuple[dict | None, str]:
-    """Cloudflare di depan jkt48.com kadang balas 403 ke IP datacenter (runner GitHub)
-    di beberapa request pertama, lalu lolos. Jadi: retry bertingkat + warm-up halaman
-    utama, baru fallback ke curl."""
+    """urllib dulu (cepat). Kalau Cloudflare nolak: mode USE_SCRAPLING=1 pakai browser
+    stealth, kalau tidak: retry bertingkat + warm-up, terakhir fallback curl."""
     url = API.format(code=code)
-    err = ""
-    for attempt, wait in enumerate((0, 3, 6, 10), start=1):
-        if wait:
-            time.sleep(wait)
+    stealth = (os.environ.get("USE_SCRAPLING") or "").strip().lower() in {"1", "true", "yes"}
+
+    body, err = _get(url)
+    payload, jerr = _json_or_none(body)
+    if payload is not None:
+        return payload, ""
+    err = jerr or err
+    log(f"cara biasa gagal untuk {code} ({err})")
+
+    if stealth:
+        payload, serr = _stealth_json(url)
+        if payload is not None:
+            log("berhasil lewat StealthyFetcher (browser)")
+            return payload, ""
+        log(f"stealth gagal: {serr}")
+        return None, f"urllib: {err}; scrapling: {serr}"
+
+    for attempt, wait in enumerate((3, 6, 10), start=2):
+        time.sleep(wait)
         body, err = _get(url)
-        if body.lstrip().startswith("{"):
-            try:
-                return json.loads(body), ""
-            except ValueError:
-                err = f"JSON rusak ({len(body)} bytes)"
-        if body:
-            err = f"non-JSON response ({len(body)} bytes)"
+        payload, jerr = _json_or_none(body)
+        if payload is not None:
+            return payload, ""
+        err = jerr or err
         log(f"percobaan {attempt} untuk {code} gagal ({err})")
-        if attempt == 1:
-            warm, _ = _get(BASE + "/")
-            log(f"warm-up halaman utama: {'ok' if warm else 'gagal'}")
+    warm, _ = _get(BASE + "/")
+    log(f"warm-up halaman utama: {'ok' if warm else 'gagal'}")
 
     log(f"urllib habis percobaan untuk {code} ({err}); fallback ke curl")
     argv = ["curl", "-sS", "--max-time", "30", "-w", "\n%{http_code}"]
