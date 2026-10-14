@@ -2,11 +2,11 @@ name: jkt48-quota-watch
 
 # Jalan 24/7 di server GitHub — laptop boleh mati.
 #
-# Cara kerja: satu run "hidup" ~55 menit dan cek kuota tiap 60 detik, lalu di akhir
-# dia memanggil dirinya sendiri (workflow_dispatch) supaya rantainya nyambung terus.
-# Jadwal */5 di bawah cuma jaring pengaman: kalau rantainya putus, jadwal ini yang
-# menyalakan lagi. Run yang datang saat sudah ada rantai jalan langsung keluar
-# (lihat step "guard") jadi tidak ada penumpukan run.
+# Cara kerja: satu run "hidup" ~55 menit dan cek kuota tiap 60 detik. Penerusnya
+# dipanggil DI AWAL run (workflow_dispatch), jadi dia ngantre di belakang run yang
+# sedang jalan -> begitu run ini selesai, penerus langsung mulai. Tidak ada celah
+# dan tidak ada tumpang tindih, karena concurrency group di bawah mengunci.
+# Jadwal */5 cuma jaring pengaman kalau rantainya putus.
 
 on:
   schedule:
@@ -48,7 +48,7 @@ jobs:
           hdr = {"Authorization": "Bearer " + os.environ["GH_TOKEN"],
                  "Accept": "application/vnd.github+json", "User-Agent": "guard"}
           others = []
-          for status in ("in_progress", "queued"):
+          for status in ("in_progress",):
               url = (f"https://api.github.com/repos/{repo}/actions/workflows/watch.yml"
                      f"/runs?status={status}&per_page=50")
               try:
@@ -57,7 +57,7 @@ jobs:
                   others += [r["id"] for r in data.get("workflow_runs", []) if r["id"] != me]
               except Exception as exc:
                   print("guard: gagal baca daftar run:", exc)
-          limit = 1 if ev == "schedule" else 2
+          limit = 1 if ev == "schedule" else 1
           skip = len(others) >= limit
           print(f"event={ev} run lain={len(others)} -> skip={skip}")
           with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
