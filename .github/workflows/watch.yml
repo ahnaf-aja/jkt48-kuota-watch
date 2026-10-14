@@ -64,26 +64,10 @@ jobs:
               fh.write(f"skip={'true' if skip else 'false'}\n")
           PY
 
-      - name: Cache browser stealth
-        if: steps.guard.outputs.skip != 'true'
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/scrapling
-            ~/.cache/camoufox
-          key: scrapling-browsers-v1
-
-      - name: Install Scrapling (browser stealth buat lolos Cloudflare)
-        if: steps.guard.outputs.skip != 'true'
-        run: |
-          python3 -m pip install --quiet "scrapling[fetchers]"
-          scrapling install || scrapling install --force
-
       - name: Cek kuota tiap 60 detik
         if: steps.guard.outputs.skip != 'true'
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          USE_SCRAPLING: "1"
           ITER: ${{ github.event.inputs.iterations || '55' }}
         run: |
           set -u

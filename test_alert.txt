@@ -1,0 +1,2 @@
+🧪 TEST dari cloud (GitHub Actions) — jalur notif lengkap: runner GitHub → proxy → jkt48.com → Discord.
+Kalau lu baca ini di Discord, artinya laptop lu boleh dimatikan total dan notif kuota tetap masuk.
