@@ -1,0 +1,13 @@
+name: ping
+
+# Workflow kecil buat ngetes apakah runner GitHub bisa dipakai sama repo ini.
+on:
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: pong
+        run: echo "pong $(date -u +%FT%TZ)"
