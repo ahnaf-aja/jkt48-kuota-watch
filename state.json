@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-14T20:42:46+00:00",
+ "updated_at": "2026-10-15T06:46:00+00:00",
  "fail_streak": 0,
  "fail_notified": false,
  "events": {
@@ -7,56 +7,56 @@
    "sessions": {
     "EX5B99-SNE4A7": {
      "date": "2026-10-24",
-     "label": "Sesi 1",
+     "label": "セッション1",
      "start": "10:00:00",
      "end": "11:00:00",
      "lanes": 12
     },
     "EX5B99-SN0624": {
      "date": "2026-10-24",
-     "label": "Sesi 2",
+     "label": "セッション2",
      "start": "11:00:00",
      "end": "12:00:00",
      "lanes": 12
     },
     "EX5B99-SNFF2D": {
      "date": "2026-10-24",
-     "label": "Sesi 3",
+     "label": "セッション3",
      "start": "12:00:00",
      "end": "13:00:00",
      "lanes": 12
     },
     "EX5B99-SN2B5E": {
      "date": "2026-10-24",
-     "label": "Sesi 4",
+     "label": "セッション4",
      "start": "14:00:00",
      "end": "15:00:00",
      "lanes": 12
     },
     "EX5B99-SNB5BE": {
      "date": "2026-10-24",
-     "label": "Sesi 5",
+     "label": "セッション5",
      "start": "15:00:00",
      "end": "16:00:00",
      "lanes": 12
     },
     "EX5B99-SN9E9E": {
      "date": "2026-10-24",
-     "label": "Sesi 6",
+     "label": "セッション6",
      "start": "16:00:00",
      "end": "17:00:00",
      "lanes": 12
     },
     "EX5B99-SN6A22": {
      "date": "2026-10-24",
-     "label": "Sesi 7",
+     "label": "セッション7",
      "start": "17:00:00",
      "end": "18:00:00",
      "lanes": 12
     },
     "EX5B99-SN91E1": {
      "date": "2026-10-24",
-     "label": "Sesi 8",
+     "label": "セッション8",
      "start": "18:00:00",
      "end": "19:00:00",
      "lanes": 14
@@ -65,687 +65,687 @@
    "lanes": {
     "EX5B99-SNE4A7-SDA818": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 1",
-     "m": "Marsha Lenathea",
+     "j": "レーン1",
+     "m": "マーシャ・レナテェア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SD5CF7": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 2",
-     "m": "Nina Tutachia",
+     "j": "レーン2",
+     "m": "ニナ・トゥータチア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SDF117": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 3",
-     "m": "Oline Manuel",
+     "j": "レーン3",
+     "m": "オリヌ・マヌエル",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SD1F30": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 4",
-     "m": "Freya Jayawardana",
+     "j": "レーン4",
+     "m": "フレヤ・ジャヤワルダナ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SD1DF2": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 5",
-     "m": "Greesella Adhalia",
+     "j": "レーン5",
+     "m": "グリーセラー・アダリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SDB2D7": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 6",
-     "m": "Adeline Wijaya",
+     "j": "レーン6",
+     "m": "アデリヌ・ウィジャヤ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SD252A": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 7",
-     "m": "Gita Sekar Andarini",
+     "j": "レーン7",
+     "m": "ギタ・スカル・アンダリニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SDBEDA": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 8",
-     "m": "Shabilqis Naila",
+     "j": "レーン8",
+     "m": "シャビルキス・ナイラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SDF48E": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 9",
-     "m": "Carissa Dini",
+     "j": "レーン9",
+     "m": "カリッサ・ディニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SD5DE9": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 10",
-     "m": "Ralyne Van Irwan",
+     "j": "レーン10",
+     "m": "レリン・バン・イルワン",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SDF3AD": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 11",
-     "m": "Christabella Bonita",
+     "j": "レーン11",
+     "m": "クリスタベラ・ボニタ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNE4A7-SD3DB8": {
      "s": "EX5B99-SNE4A7",
-     "j": "Jalur 12",
-     "m": "Sona Kalyana",
+     "j": "レーン12",
+     "m": "ソナ・カリアナ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SD872A": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 1",
-     "m": "Marsha Lenathea",
+     "j": "レーン1",
+     "m": "マーシャ・レナテェア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SD9ED2": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 2",
-     "m": "Nina Tutachia",
+     "j": "レーン2",
+     "m": "ニナ・トゥータチア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SDAA14": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 3",
-     "m": "Oline Manuel",
+     "j": "レーン3",
+     "m": "オリヌ・マヌエル",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SDF6BE": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 4",
-     "m": "Freya Jayawardana",
+     "j": "レーン4",
+     "m": "フレヤ・ジャヤワルダナ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SD3797": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 5",
-     "m": "Greesella Adhalia",
+     "j": "レーン5",
+     "m": "グリーセラー・アダリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SD65BE": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 6",
-     "m": "Adeline Wijaya",
+     "j": "レーン6",
+     "m": "アデリヌ・ウィジャヤ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SDF261": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 7",
-     "m": "Gita Sekar Andarini",
+     "j": "レーン7",
+     "m": "ギタ・スカル・アンダリニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SD15BB": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 8",
-     "m": "Shabilqis Naila",
+     "j": "レーン8",
+     "m": "シャビルキス・ナイラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SD03EE": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 9",
-     "m": "Fatimah Azzahra",
+     "j": "レーン9",
+     "m": "ファティマ・アザーラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SD0EF0": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 10",
-     "m": "Putry Jazyta",
+     "j": "レーン10",
+     "m": "プトリ・ジャジタ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SDF0EF": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 11",
-     "m": "Fahira Putri",
+     "j": "レーン11",
+     "m": "ファヒラ・プトリ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN0624-SD88DB": {
      "s": "EX5B99-SN0624",
-     "j": "Jalur 12",
-     "m": "Maxine Faye",
+     "j": "レーン12",
+     "m": "マキシン・ファイエ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SDEE71": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 1",
-     "m": "Febriola Sinambela",
+     "j": "レーン1",
+     "m": "フェブリオラ・シナンベラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SDD4D1": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 2",
-     "m": "Gabriela Abigail",
+     "j": "レーン2",
+     "m": "ガブリエラ・アビゲール",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SDDAC5": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 3",
-     "m": "Jesslyn Elly",
+     "j": "レーン3",
+     "m": "ジェスリン・エリー",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SD8B6C": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 4",
-     "m": "Helisma Putri",
+     "j": "レーン4",
+     "m": "ヘリスマ・プトリ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SD0DF8": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 5",
-     "m": "Kathrina Irene",
+     "j": "レーン5",
+     "m": "カトリナ・アイリン",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SD9D96": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 6",
-     "m": "Angelina Christy",
+     "j": "レーン6",
+     "m": "アンジェリナ・クリスティ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SD777D": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 7",
-     "m": "Michelle Levia",
+     "j": "レーン7",
+     "m": "ミシェル・レヴィア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SD5FEE": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 8",
-     "m": "Abigail Rachel",
+     "j": "レーン8",
+     "m": "アビガイル・ラチェル",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SD1384": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 9",
-     "m": "Lulu Salsabila",
+     "j": "レーン9",
+     "m": "ルル・サルサビラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SD72DA": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 10",
-     "m": "Dena Natalia",
+     "j": "レーン10",
+     "m": "デナ・ナタリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SDD84F": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 11",
-     "m": "Astrella Virgiananda",
+     "j": "レーン11",
+     "m": "アストレラ・ヴィルジアナンダ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNFF2D-SD6692": {
      "s": "EX5B99-SNFF2D",
-     "j": "Jalur 12",
-     "m": "Hagia Sopia",
+     "j": "レーン12",
+     "m": "ハギア・ソピア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SD3967": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 1",
-     "m": "Febriola Sinambela",
+     "j": "レーン1",
+     "m": "フェブリオラ・シナンベラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SD631C": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 2",
-     "m": "Gabriela Abigail",
+     "j": "レーン2",
+     "m": "ガブリエラ・アビゲール",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SD0E72": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 3",
-     "m": "Jesslyn Elly",
+     "j": "レーン3",
+     "m": "ジェスリン・エリー",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SDE6F7": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 4",
-     "m": "Helisma Putri",
+     "j": "レーン4",
+     "m": "ヘリスマ・プトリ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SD1989": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 5",
-     "m": "Kathrina Irene",
+     "j": "レーン5",
+     "m": "カトリナ・アイリン",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SDA3EE": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 6",
-     "m": "Angelina Christy",
+     "j": "レーン6",
+     "m": "アンジェリナ・クリスティ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SDA317": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 7",
-     "m": "Michelle Levia",
+     "j": "レーン7",
+     "m": "ミシェル・レヴィア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SD81C6": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 8",
-     "m": "Abigail Rachel",
+     "j": "レーン8",
+     "m": "アビガイル・ラチェル",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SD24EE": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 9",
-     "m": "Lulu Salsabila",
+     "j": "レーン9",
+     "m": "ルル・サルサビラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SD0D1F": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 10",
-     "m": "Dena Natalia",
+     "j": "レーン10",
+     "m": "デナ・ナタリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SDE981": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 11",
-     "m": "Afera Thalia",
+     "j": "レーン11",
+     "m": "アフェラ・タリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN2B5E-SD3484": {
      "s": "EX5B99-SN2B5E",
-     "j": "Jalur 12",
-     "m": "Heidi Suyangga",
+     "j": "レーン12",
+     "m": "ヘイディ・スヤンガ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SD2B8F": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 1",
-     "m": "Michelle Alexandra",
+     "j": "レーン1",
+     "m": "ミシェル・アレクサンドラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SD0CE2": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 2",
-     "m": "Indah Cahya",
+     "j": "レーン2",
+     "m": "インダー・チャヤ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SD32AC": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 3",
-     "m": "Grace Octaviani",
+     "j": "レーン3",
+     "m": "グレース・オクタヴィアニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SDCEF2": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 4",
-     "m": "Aurellia",
+     "j": "レーン4",
+     "m": "アウレリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SDE837": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 5",
-     "m": "Celline Thefani",
+     "j": "レーン5",
+     "m": "セリーヌ・テファニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SD19AB": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 6",
-     "m": "Cornelia Vanisa",
+     "j": "レーン6",
+     "m": "コルネリア・ファニサ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SD1388": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 7",
-     "m": "Mutiara Azzahra",
+     "j": "レーン7",
+     "m": "ムティアラ・アザフラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SD84F1": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 8",
-     "m": "Victoria Kimberly",
+     "j": "レーン8",
+     "m": "ヴィクトリア・キムベルリー",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SDEE9C": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 9",
-     "m": "Catherina Vallencia",
+     "j": "レーン9",
+     "m": "カトリーヌ・ ヴァレンシア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SD0000": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 10",
-     "m": "Jessica Chandra",
+     "j": "レーン10",
+     "m": "ジェシカ・チャンドラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SDBD79": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 11",
-     "m": "Ribka Budiman",
+     "j": "レーン11",
+     "m": "リブカ・ブディマン",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SNB5BE-SDDFEF": {
      "s": "EX5B99-SNB5BE",
-     "j": "Jalur 12",
-     "m": "Jacqueline Immanuela",
+     "j": "レーン12",
+     "m": "ジャクリーン・インマヌエラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SDECCD": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 1",
-     "m": "Michelle Alexandra",
+     "j": "レーン1",
+     "m": "ミシェル・アレクサンドラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SDF562": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 2",
-     "m": "Indah Cahya",
+     "j": "レーン2",
+     "m": "インダー・チャヤ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SDC58E": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 3",
-     "m": "Grace Octaviani",
+     "j": "レーン3",
+     "m": "グレース・オクタヴィアニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SDBA86": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 4",
-     "m": "Aurellia",
+     "j": "レーン4",
+     "m": "アウレリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SDA74F": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 5",
-     "m": "Celline Thefani",
+     "j": "レーン5",
+     "m": "セリーヌ・テファニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SD35FA": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 6",
-     "m": "Cornelia Vanisa",
+     "j": "レーン6",
+     "m": "コルネリア・ファニサ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SD1A06": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 7",
-     "m": "Mutiara Azzahra",
+     "j": "レーン7",
+     "m": "ムティアラ・アザフラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SD04E5": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 8",
-     "m": "Victoria Kimberly",
+     "j": "レーン8",
+     "m": "ヴィクトリア・キムベルリー",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SD956E": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 9",
-     "m": "Catherina Vallencia",
+     "j": "レーン9",
+     "m": "カトリーヌ・ ヴァレンシア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SDE860": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 10",
-     "m": "Jessica Chandra",
+     "j": "レーン10",
+     "m": "ジェシカ・チャンドラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SD6439": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 11",
-     "m": "Ribka Budiman",
+     "j": "レーン11",
+     "m": "リブカ・ブディマン",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN9E9E-SDBC4F": {
      "s": "EX5B99-SN9E9E",
-     "j": "Jalur 12",
-     "m": "Nur Intan",
+     "j": "レーン12",
+     "m": "ヌル・インタン",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SDB9D2": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 1",
-     "m": "Jazzlyn Trisha",
+     "j": "レーン1",
+     "m": "ジャッズリン・トリシャ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SD8983": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 2",
-     "m": "Aurhel Alana",
+     "j": "レーン2",
+     "m": "アウレル・アラナ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SD286E": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 3",
-     "m": "Fiony Alveria",
+     "j": "レーン3",
+     "m": "フィオニー・アルフェリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SD8A8A": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 4",
-     "m": "Hillary Abigail",
+     "j": "レーン4",
+     "m": "ヒラリー ・アビガイル",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SDCAA2": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 5",
-     "m": "Fritzy Rosmerian",
+     "j": "レーン5",
+     "m": "フリッツィー・ロスメリアン",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SDCB59": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 6",
-     "m": "Nayla Suji",
+     "j": "レーン6",
+     "m": "ナイラ ・スジ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SD8018": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 7",
-     "m": "Anindya Ramadhani",
+     "j": "レーン7",
+     "m": "アニンディア・ラマダニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SDE6A2": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 8",
-     "m": "Cynthia Yaputera",
+     "j": "レーン8",
+     "m": "シンティア・ヤプテラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SD670D": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 9",
-     "m": "Desy Natalia",
+     "j": "レーン9",
+     "m": "デシー・ナタリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SD7D39": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 10",
-     "m": "Raisha Syifa",
+     "j": "レーン10",
+     "m": "ライシャ・シファ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SD4F8B": {
      "s": "EX5B99-SN6A22",
      "j": "Jalur 11",
-     "m": "Feni Fitriyanti",
+     "m": "フェニ・フィトゥリヤンティ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN6A22-SD755D": {
      "s": "EX5B99-SN6A22",
-     "j": "Jalur 12",
-     "m": "Humaira Ramadhani",
+     "j": "レーン12",
+     "m": "フマイラ・ラマダニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SD63C3": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 1",
-     "m": "Jazzlyn Trisha",
+     "j": "レーン1",
+     "m": "ジャッズリン・トリシャ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SDF201": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 2",
-     "m": "Aurhel Alana",
+     "j": "レーン2",
+     "m": "アウレル・アラナ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SDEC3B": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 3",
-     "m": "Fiony Alveria",
+     "j": "レーン3",
+     "m": "フィオニー・アルフェリア",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SDC52B": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 4",
-     "m": "Hillary Abigail",
+     "j": "レーン4",
+     "m": "ヒラリー ・アビガイル",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SD3286": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 5",
-     "m": "Fritzy Rosmerian",
+     "j": "レーン5",
+     "m": "フリッツィー・ロスメリアン",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SD70B1": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 6",
-     "m": "Nayla Suji",
+     "j": "レーン6",
+     "m": "ナイラ ・スジ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SDE459": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 7",
-     "m": "Anindya Ramadhani",
+     "j": "レーン7",
+     "m": "アニンディア・ラマダニ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SDEE29": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 8",
-     "m": "Cynthia Yaputera",
+     "j": "レーン8",
+     "m": "シンティア・ヤプテラ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SD4ADC": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 9",
-     "m": "Desy Natalia",
+     "j": "レーン9",
+     "m": "デシー・ナタリア",
      "q": 15,
      "p": 200000
     },
     "EX5B99-SN91E1-SD462F": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 10",
-     "m": "Raisha Syifa",
+     "j": "レーン10",
+     "m": "ライシャ・シファ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SD81E8": {
      "s": "EX5B99-SN91E1",
      "j": "Jalur 11",
-     "m": "Feni Fitriyanti",
+     "m": "フェニ・フィトゥリヤンティ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SD2B71": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 12",
-     "m": "Jemima Evodie",
+     "j": "レーン12",
+     "m": "ジミマ・エヴォディ",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SD429E": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 13",
-     "m": "Mikaela Kusjanto",
+     "j": "レーン13",
+     "m": "ミカエラ・クシャント",
      "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SDDFCE": {
      "s": "EX5B99-SN91E1",
-     "j": "Jalur 14",
-     "m": "Bong Aprilli",
+     "j": "レーン14",
+     "m": "ボン・アプリリ",
      "q": 0,
      "p": 200000
     }
