@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-18T14:21:35+00:00",
+ "updated_at": "2026-10-18T15:50:33+00:00",
  "fail_streak": 0,
  "fail_notified": false,
  "events": {
@@ -711,7 +711,7 @@
      "s": "EX5B99-SN91E1",
      "j": "Jalur 9",
      "m": "Desy Natalia",
-     "q": 2,
+     "q": 0,
      "p": 200000
     },
     "EX5B99-SN91E1-SD462F": {
