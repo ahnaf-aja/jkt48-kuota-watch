@@ -1,17 +1,10 @@
 {
- "updated_at": "2026-10-18T15:50:33+00:00",
+ "updated_at": "2026-10-24T02:45:35+00:00",
  "fail_streak": 0,
  "fail_notified": false,
  "events": {
   "EX5B99": {
    "sessions": {
-    "EX5B99-SNE4A7": {
-     "date": "2026-10-24",
-     "label": "Sesi 1",
-     "start": "10:00:00",
-     "end": "11:00:00",
-     "lanes": 12
-    },
     "EX5B99-SN0624": {
      "date": "2026-10-24",
      "label": "Sesi 2",
@@ -63,90 +56,6 @@
     }
    },
    "lanes": {
-    "EX5B99-SNE4A7-SDA818": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 1",
-     "m": "Marsha Lenathea",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SD5CF7": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 2",
-     "m": "Nina Tutachia",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SDF117": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 3",
-     "m": "Oline Manuel",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SD1F30": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 4",
-     "m": "Freya Jayawardana",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SD1DF2": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 5",
-     "m": "Greesella Adhalia",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SDB2D7": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 6",
-     "m": "Adeline Wijaya",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SD252A": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 7",
-     "m": "Gita Sekar Andarini",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SDBEDA": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 8",
-     "m": "Shabilqis Naila",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SDF48E": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 9",
-     "m": "Carissa Dini",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SD5DE9": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 10",
-     "m": "Ralyne Van Irwan",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SDF3AD": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 11",
-     "m": "Christabella Bonita",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SNE4A7-SD3DB8": {
-     "s": "EX5B99-SNE4A7",
-     "j": "Jalur 12",
-     "m": "Sona Kalyana",
-     "q": 0,
-     "p": 200000
-    },
     "EX5B99-SN0624-SD872A": {
      "s": "EX5B99-SN0624",
      "j": "Jalur 1",
