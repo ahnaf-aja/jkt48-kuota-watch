@@ -1,17 +1,10 @@
 {
- "updated_at": "2026-10-24T02:45:35+00:00",
+ "updated_at": "2026-10-24T03:51:02+00:00",
  "fail_streak": 0,
  "fail_notified": false,
  "events": {
   "EX5B99": {
    "sessions": {
-    "EX5B99-SN0624": {
-     "date": "2026-10-24",
-     "label": "Sesi 2",
-     "start": "11:00:00",
-     "end": "12:00:00",
-     "lanes": 12
-    },
     "EX5B99-SNFF2D": {
      "date": "2026-10-24",
      "label": "Sesi 3",
@@ -56,90 +49,6 @@
     }
    },
    "lanes": {
-    "EX5B99-SN0624-SD872A": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 1",
-     "m": "Marsha Lenathea",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SD9ED2": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 2",
-     "m": "Nina Tutachia",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SDAA14": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 3",
-     "m": "Oline Manuel",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SDF6BE": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 4",
-     "m": "Freya Jayawardana",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SD3797": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 5",
-     "m": "Greesella Adhalia",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SD65BE": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 6",
-     "m": "Adeline Wijaya",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SDF261": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 7",
-     "m": "Gita Sekar Andarini",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SD15BB": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 8",
-     "m": "Shabilqis Naila",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SD03EE": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 9",
-     "m": "Fatimah Azzahra",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SD0EF0": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 10",
-     "m": "Putry Jazyta",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SDF0EF": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 11",
-     "m": "Fahira Putri",
-     "q": 0,
-     "p": 200000
-    },
-    "EX5B99-SN0624-SD88DB": {
-     "s": "EX5B99-SN0624",
-     "j": "Jalur 12",
-     "m": "Maxine Faye",
-     "q": 0,
-     "p": 200000
-    },
     "EX5B99-SNFF2D-SDEE71": {
      "s": "EX5B99-SNFF2D",
      "j": "Jalur 1",
