@@ -14,11 +14,6 @@ jadi laptop kamu **tidak perlu nyala** untuk dapat notifikasi.
 - Snapshot terakhir disimpan di `state.json` dan di-commit otomatis oleh workflow, jadi
   tidak ada alert dobel. Kalau pengiriman gagal, state **tidak** dimajukan → dicoba lagi nanti.
 
-## Yang tidak dikabari
-
-Member di `config.json` → `ignore_members` (default: `Desy Natalia`). Perubahannya tetap
-disimpan di state, cuma tidak dikirim.
-
 ## Nambah event lain
 
 Edit `config.json` (bisa langsung dari web GitHub):
